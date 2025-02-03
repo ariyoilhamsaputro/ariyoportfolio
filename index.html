@@ -535,37 +535,37 @@
                         </div>
                     </div> <!-- contact box -->
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-7">
-                    <div class="contact-box text-center mt-30">
-                        <div class="contact-icon">
-                            <i class="lni-envelope"></i>
-                        </div>
-                        <div class="contact-content">
-                            <h6 class="contact-title">Email</h6>
-                            <p>support@yourmail.com</p>
-                            <p>info@helpline.com</p>
-                        </div>
+             <div class="col-lg-4 col-md-6 col-sm-7">
+    <div class="contact-box text-center mt-30">
+        <div class="contact-icon">
+            <i class="lni-envelope"></i>
+        </div>
+        <div class="contact-content">
+            <h6 class="contact-title">Email</h6>
+            <p>your.email@example.com</p> <!-- Ganti dengan email Anda -->
+        </div>
                     </div> <!-- contact box -->
                 </div>
             </div> <!-- row -->
             <div class="row">
                 <div class="col-lg-6">
-                    <div class="contact-form pt-30">
-                        <form id="contact-form" action="assets/contact.php">
-                            <div class="single-form">
-                                <input type="text" name="name" placeholder="Name">
-                            </div> <!-- single form -->
-                            <div class="single-form">
-                                <input type="email" name="email" placeholder="Email">
-                            </div> <!-- single form -->
-                            <div class="single-form">
-                                <textarea name="message" placeholder="Message"></textarea>
-                            </div> <!-- single form -->
-                            <p class="form-message"></p>
-                            <div class="single-form">
-                                <button class="main-btn" type="submit">Send Message</button>
-                            </div> <!-- single form -->
-                        </form>
+    <div class="contact-form pt-30">
+        <form id="contact-form" action="https://formspree.io/f/YOUR_FORMSPREE_ID" method="POST">
+            <div class="single-form">
+                <input type="text" name="name" placeholder="Name" required>
+            </div>
+            <div class="single-form">
+                <input type="email" name="_replyto" placeholder="Email" required>
+            </div>
+            <div class="single-form">
+                <textarea name="message" placeholder="Message" required></textarea>
+            </div>
+            <input type="hidden" name="_subject" value="New submission from portfolio">
+            <p class="form-message"></p>
+            <div class="single-form">
+                <button class="main-btn" type="submit">Send Message</button>
+            </div>
+        </form>
                     </div> <!-- contact form -->
                 </div>
                 <div class="col-lg-6">
